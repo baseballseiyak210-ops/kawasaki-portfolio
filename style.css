@@ -159,6 +159,43 @@ body {
   color: #7a8399;
 }
 
+.works-video { margin-top: 24px; }
+
+.result-card { grid-column: 1 / -1; }
+
+.result-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.result-list li {
+  background: var(--gray);
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.result-label {
+  display: block;
+  font-size: 0.8rem;
+  color: #7a8399;
+  margin-bottom: 6px;
+}
+
+.result-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .result-list { grid-template-columns: 1fr; }
+}
+
 .btn-works {
   display: inline-block;
   margin-top: 20px;
